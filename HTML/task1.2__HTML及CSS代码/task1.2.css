@@ -1,0 +1,20 @@
+		a{text-decoration:none;}
+		body{background:#DEDEDE;}
+		ul li{list-style:none;}
+		.header,.footer{background-color:black;width: 1250px;height:60px;margin:10px auto;}
+		.header img{float:left;height:50px;margin:5px 5px;}
+		.header ul {float:right;color:white;margin-right:10px;}
+		.header ul li{display:inline-block; color:white;}
+		.header ul li a{color:white;}
+		.content{width:1230px;margin:20px auto;background:white;padding:10px;}
+		.picstyle{padding:10px;border:1px solid black;margin-top:10px;width:304px;margin-left:20px;}
+		.picstyle span{display:block;text-align:center;font-weight:bold;}
+		.table{border:1px solid white ;border-collapse:collapse; }
+		.tablehead{background:black;color:#fff;}
+		th,td{border:1px solid black;width:100px;text-align:center;height:30px;}
+		.label{width:200px;float:left;text-align:right;font-size:16px;line-height:30px;}
+		.inputtext{width:200px;height:20px;}
+		.tips{display:inline-block;width:400px;text-align:center;font-size:16px;line-height:30px;color:#B3A4A7;}
+		.submitbutton{width:100px; height:30px;background:#3355D0;border:1px solid blue;border-radius:6px;text-align: center;color:#fff;margin-left:150px;}
+		.selecttext{width:200px;height:25px;margin-top:2px;}
+		.footer div{color:#FFF;text-align:center;line-height: 60px;}
