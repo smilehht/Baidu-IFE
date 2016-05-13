@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="task1.5.css" type="text/css">
+</head>
+<body>
+	<header class="header">
+		<img src="img/baidu.png" alt="百度">
+		<ul>
+			<li><a href="#">导航链接一</a></li>
+			<li><a href="#">导航链接二</a></li>
+			<li><a href="#">导航链接三</a></li>
+			<li><a href="#">导航链接四</a></li>
+		</ul>
+	</header>
+
+		<div class="nav">
+		<form action="http://www.baidu.com" method="get" class="content">
+			<label for="email" class="label">请输入邮箱地址：</label>
+			<input class="inputtext" type="text" name="email" value="">
+			<br><br>
+			<span class="tips">邮箱地址请按照要求格式输入</span><br><br>
+			<label class="label"  for="passward">请输入密码：</label>
+			<input class="inputtext" type="password" name="password"><br>
+			<label class="label" for="passward">确认密码：</label>
+			<input class="inputtext" type="password" name="password"><br><br>
+			<span class="tips">密码请为6-16位数字</span>
+			<br><br>
+			<label class="label" for="gender">性别：</label>
+				<input type="radio" name="gender">男
+				<input type="radio" name="gender">女
+			<br><br><br>
+			<label class="label" for="hobby">爱好：</label>
+			<input type="checkbox" name="hobby">看书
+			<input type="checkbox" name="hobby">跑步
+			<input type="checkbox" name="hobby">发呆
+			<br><br><br>
+			<label class="label" for="city">城市：</label>
+			<select  class="selecttext"  name="city" id="">
+				<option value="beijing">北京</option>
+				<option value="tianjin">天津</option>
+				<option value="wuhan">武汉</option>
+			</select><br><br><br>
+			<label class="label" for="resume">个人陈述：</label>
+			<textarea name="resume" id="" class="inputtext" value="" disabled="disabled" resize="none">我和你吻别在哪无人的街</textarea><br><br>
+			<input class="submitbutton" type="submit" value="确定">
+		</form>
+	</div>
+
+	<div class="main">
+		<article class="content">
+			<h1><b>网站一级标题</b></h1>
+			<ul>
+				<li><a href="http://www.baidu.com">百度</a></li>
+				<li><a href="http://www.sina.com">新浪</a></li>
+				<li><a href="#">锚点</a></li>
+			</ul>
+				<h2>文章的一级标题</h2>
+				<p>
+					<author>文章作者：胡宏涛 </author>
+					<time>发表时间：2016年5月5日</time>
+					</p>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+				<p>这是一个很长很长的段落，这里有个换行，你看见了没<br/>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有个链接,http://ife.baidu.com</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+				</p>
+		</article>
+
+		<div class="content">
+			<img src="img/1.jpg" alt="pet" title="dog" />
+			<ol>
+				<li>有序列表一</li>
+				<li>有序列表二</li>
+				<li>有序列表三</li>
+			</ol>
+		</div>
+
+		<div class="content">
+			<h1><strong>图片</strong></h1>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+			<div class="picstyle">
+				<img src="img/1.jpg" alt="pet" title="dog" /><br>
+				<span>萌萌哒</span>
+			</div>
+		</div>
+
+		<div class="content">
+			<div>下面是一个表格，给表格加了border=1px的样式</div>
+			<br><br>
+			<table class="table">
+				<thead class="tablehead">
+					<th class="cell">序号</th>
+					<th>内容</th>
+					<th>操作</th>
+					<th>状态</th>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>第一名</td><td colspan="2"><a href="#">发朵大红花</a></td></tr>
+					<tr><td>2</td><td>第二名</td><td><a href="#">态度很认真</a></td><td>点个赞</td></tr>
+					<tr><td>3</td><td>第三名</td><td><a href="#">成绩过得去</a></td><td>多鼓励</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+
+	<footer class="footer">
+		<div>版权所有&copy</div>
+	</footer>
+</body>
+</html>
