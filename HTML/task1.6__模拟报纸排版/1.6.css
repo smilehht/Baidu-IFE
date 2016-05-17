@@ -7,7 +7,7 @@ body{
 	width:980px;
 	height:1386px;
 	/*overflow:hidden;*/
-	margin:0 44px;
+	margin:0 auto;
 }
 
 .header{
@@ -30,8 +30,6 @@ body{
 	width:61px;
 	height:12px;
 	display: inline-block;
-/*	text-align: bottom;
-	vertical-align: bottom;*/
 }
 
 .header .time{
@@ -57,6 +55,7 @@ body{
 .show .about{
 	margin-left:40px;
 	width:203px;
+	min-width:180px;
 	height:299px;
 	display:inline-block;
 	border-top:2px solid #cc8091;
@@ -66,17 +65,28 @@ body{
 
 .show .about span{
 	font-size:24px;
+	line-height: 34px;
 	color:#000;
 	font-family:"MicrosoftYaHei";
-	text-decoration:underline;
 }
 
+.show .about span.underline{
+
+	border-bottom:2px solid black;
+}
+.show .about .aboutTechnology{
+	line-height: 34px;
+	font-size:30px;
+	border:none;
+}
 .show .about p{
+	line-height: 20px;
 	font-size:12px;
-	color:676767;
+	color:#676767;
 	font-family:"KaiTi";
 }
 .show .about .outstanding{
+	line-height:80px;
 	font-size:100px;
 	color:#75b86b;
 	text-decoration:none;
@@ -90,13 +100,15 @@ body{
 	text-decoration:none;
 	display: inline-block;
 }
-.show .corner span{
+.show .corner p{
 	font-size:12px;
 	font-family:"MicrosoftYaHei";
 	color:#cc8091;
 	text-decoration:none;
 }
 .show .corner .css{
+	display:inline-block;
+	width:40px;
 	font-size:21px;
 }
 .show .corner div{
@@ -142,7 +154,7 @@ body{
 }
 
 .article .explain{
-	margin-top: 60px;
+	margin-top: 20%;
 /*	display:table-cell;
 	vertical-align: bottom;*/
 }
@@ -152,7 +164,7 @@ body{
 }
 
 .introduce{
-	height:600px;
+	height:650px;
 	width:892px;
 	margin-top:75px;
 }
@@ -220,10 +232,12 @@ body{
 
 
 .introduce .outline{
+	float:right;
 	width:458px;
 	height:275px;
 	display:inline-block;
 	vertical-align: top;
+	position:relative;
 }
 .introduce .top{
 	position:relative;
@@ -254,4 +268,126 @@ body{
 	font-style:italic;
 	color:#72b16a;
 	font-family: "MicrosoftYaHei";
+}
+
+.introduce .bottom{
+	width:459px;
+	height:318px;
+	background:#EEEDD6;
+	/*margin-top:30px;*/
+/*	vertical-align:top;
+	display:inline-block;*/
+	position:absolute;
+	top:300px;
+	left:0px;
+}
+
+.introduce .catalog{
+	width:408px;
+	height: 120px;
+	padding:15px 20px 15px 30px;
+	overflow: hidden;
+
+}
+.introduce .catalog p{
+	display: inline-block;
+	width:408px;
+	height: 40px;
+	overflow: hidden;
+	line-height: 30px;
+	font-size: 16px;
+	color:#5a5b5b;
+	text-align:left;
+
+}
+.introduce .catalog span{
+	overflow: hidden;
+	display: inline-block;
+	line-height: 40px;
+	font-size: 12px;
+	text-align:right;
+	color:#5a5b5b;
+	font-family: "SimSun";
+}
+
+.introduce .helloworld{
+	width: 459px;
+	height:164px;
+
+}
+
+.introduce .helloworld .one{
+	padding:25px 5px 25px 5px;
+	width:240px;
+	height:110px;
+	background:#D45C5B;
+	color:#fff;
+	display: inline-block;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+
+.introduce .helloworld .big{
+	padding-left:0px;
+	font-size: 110px;
+	color:#fff;
+	border-right:2px solid #fff;
+}
+
+.introduce .one div{
+	width:170px;
+	height:100px;
+	display:inline-block;
+	overflow: hidden;
+	/*border-right:2px solid #fff;*/
+}
+
+.introduce .one  p{
+	display:inline-block;
+	font-size:20px;
+	color:#fff;
+	font-style:italic;
+	line-height:30px;
+}
+
+.introduce .small{
+	font-size:12px;
+	line-height:18px;
+	font-family: "MicrosoftYaHei";
+	color:#fff;
+}
+
+
+.introduce .hello{
+	display:inline-block;
+	width:180px;
+	height:150px;
+	overflow:hidden;
+	position:absolute;
+	bottom:0px;
+	right:10px;
+}
+
+.introduce .hello span{
+	font-size:14px;
+	color:#5a5b5b;
+	font-family:"MicrosoftYaHei";
+	font-style:italic;
+	line-height:20px;
+	vertical-align: text-top;
+}
+
+.introduce .hello .quote{
+	font-size:30px;
+	color:#d45d5c;
+	font-family:"SimHei";
+	font-style:normal;
+}
+
+.footer{
+
+	width:980px;
+	height:80px;
+	border-top:1px solid #8F8F8F;
 }
