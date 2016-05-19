@@ -1,0 +1,557 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+ul,li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+body{
+	margin:auto;
+	width:1280px;
+	min-width: 800px;
+	overflow:auto;
+}
+
+.header{
+	height:56px;
+}
+
+.header-brand img{
+	margin:13px auto 12px 60px ;
+}
+
+.header-brand span {
+	font:24px 'SimHei';
+	line-height:56px;
+	vertical-align: top;
+}
+
+.header-navi{
+	float: right;
+	margin-right:40px;
+}
+
+.header-navi li{
+	float:left;
+}
+
+.header-navi li a{
+	display: inline-block;;
+	padding:13px 10px;
+	border-bottom:4px solid #fff;
+	margin-left:5px;
+	font:16px 'SimHei';
+	line-height:26px;
+	color:#7F7E83;
+}
+
+.header-navi li:last-child a{
+
+	color:#E74E48;
+}
+
+.header-navi li:hover a{
+	border-bottom:4px solid  #EE716D;
+	cursor:pointer;
+	color: #E74E48;
+}
+
+.main{
+	position:relative;
+}
+
+.main-pic{
+	width:1280px;
+	height:692px;
+}
+
+.main-show{
+	position:absolute;
+	top:214px;
+	left:116px;
+}
+
+.main-time{
+	font:45px 'Times New Roman';
+	line-height: 65px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.main-generation{
+	font:20px 'SimHei';
+	color:#fff;
+	line-height:32px;
+}
+
+.main-experience{
+	margin-top:62px;
+	background:#E74F4E;
+	width:330px;
+	height:63px;
+	text-align: center;
+}
+
+.main-experience a{
+	font:28px 'SimHei';
+	font-weight:bold;
+	line-height: 63px;
+	color:#fff;
+}
+
+.main-part2{
+	height:250px;
+}
+
+.main-tag {
+	float:left;
+	width:310px;
+}
+
+.main-img{
+	height:131px;
+	text-align:center;
+}
+
+.main-img img{
+	margin:50px auto;
+}
+
+.main-create{
+	text-align:center;
+	height:52px;
+	width:310px;
+	border-right:2px solid #ABABAB;
+}
+
+.main-tag:last-child .main-create{
+	border:none;
+}
+
+.main-create p{
+	font:14px 'SimHei';
+	color:#858585;
+	line-height: 18px;
+}
+
+.main-part3{
+	height:360px;
+	background:#ECECEC;
+}
+
+.mian-picture{
+	text-align:center;
+}
+
+.mian-picture img{
+	margin:90px auto 50px;
+}
+
+.main-about{
+	font:50px 'SimHei';
+	text-align:center;
+	color:#A4A4A4;
+}
+
+.main-part4{
+	height:341px;
+	background:url("img/task_1_07_2.jpg");
+	text-align:center;
+	overflow:hidden;
+}
+
+.main-find{
+	font:20px 'SimHei';
+	margin:45px auto 5px;
+	color:#fff;
+}
+
+.main-shortLine{
+	margin:10px auto;
+	width:30px;
+	height:3px;
+	background:#fff;
+}
+
+.main-everyCity{
+	font:12px 'MicrosoftYaHei';
+	color:#fff;
+	line-height:46px;
+	font-weight:bold;
+}
+
+.main-position {
+	margin:40px auto 20px;
+	width:1080px;
+	height:100px;
+}
+
+.main-position li{
+	float:left;
+	margin-right:25px;
+	display:inline-block;
+}
+
+.main-position li input{
+	padding:5px 5px;
+	width:222px;
+	height:25px;
+}
+
+.main-search{
+	width:246px;
+	height:39px;
+	background:#BE4F48;
+	line-height: 39px;
+	color:#fff;
+	text-align:center;
+}
+
+.main-part5{
+	height:346px;
+	padding:100px 130px;
+	background:#F8F8F8;
+}
+
+.main-activity{
+	float:left;
+	margin-right:36px;
+}
+
+.main-activity img{
+	padding:6px;
+	border: 1px solid #E1E1E1;
+}
+
+.main-city{
+	text-align:center;
+}
+
+.main-title{
+	font:16px 'SimHei';
+	line-height:20px;
+	font-weight:bold;
+	line-height:34px;
+}
+
+.main-presentation{
+	font:12px 'SimHei';
+	color:#7C7C7C;
+	line-height:20px;
+}
+
+.main-part6{
+	height:565px;
+}
+
+.main-newWorld{
+	display:inline-block;
+	padding:1px;
+	width:852px;
+	text-align:center;
+	height:565px;
+	background:url('img/task_1_07_7.jpg') no-repeat;
+}
+
+.main-world{
+	margin-top:130px;
+	font:48px 'MicrosoftYaHei';
+	line-height: 54px;
+	font-weight:bold;
+	color:#fff;
+}
+
+.main-worldTime{
+	font:120px 'SimHei';
+	line-height: 1.25;
+	font-weight:bold;
+	color:#fff;
+}
+
+.main-at,.main-date{
+	font:20px 'MicrosoftYaHei';
+	line-height: 1.25;
+	font-weight:bold;
+	color:#FFF;
+}
+
+.main-introduce{
+	display: inline-block;
+	padding:125px 50px 130px ;
+	width:300px;
+	height:300px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.main-worldTitle{
+	font:20px 'SimHei';
+	line-height:2.5;
+	font-weight:bold;
+}
+
+.main-number{
+	color:#EA4F4D;
+}
+
+.main-content{
+	font:12px 'SimHei';
+	color:#B1B1B1;
+	/*font-weight:bold;*/
+	line-height: 2.5;
+	text-align:left;
+}
+
+.main-details{
+	margin:30px auto 20px;
+	text-align:center;
+	width:103px;
+	height:30px;
+	border:2px solid #EA4F4D;
+}
+
+.main-details a{
+	line-height:30px;
+	color:#EA4F4D;
+	font-weight: bold;
+}
+
+.main-circle{
+	margin:25px auto 10px;
+	text-align:center;
+	width:103px;
+	height:30px;
+}
+
+.main-circle span{
+	display: inline-block;
+	width:8px;
+	height:8px;
+	margin-right:5px;
+	border:1px solid #8B8B8B;
+	border-radius: 4px;
+}
+
+.main-circle span:first-child{
+	background:#8B8B8B;
+}
+
+.main-part7{
+	height:520px;
+	overflow: hidden;
+}
+
+.main-times{
+	float:left;
+	width:426px;
+	height:520px;
+	text-align:center;
+}
+
+.main-first{
+	background:#E74F4E;
+	color:#fff;
+}
+
+.main-last{
+	background:url('img/task_1_07_8.jpg');
+}
+
+.main-new{
+	margin-top:173px;
+}
+
+.main-new,.main-life{
+	font:20px 'SimHei';
+	font-weight:bold;
+	line-height:2;
+}
+
+.main-watchDetails{
+	margin:30px auto 20px;
+	text-align:center;
+	width:167px;
+	height:40px;
+	font-weight:bold;
+}
+
+.main-view1{
+	border:2px solid #fff;
+}
+
+.main-view1 a{
+	font:22px 'SimHei';
+	line-height: 40px;
+	color:#fff;
+}
+
+.main-view2{
+	border:2px solid #EA4F4D;
+}
+
+.main-view2 a{
+	color:#EA4F4D;
+	font:22px 'SimHei';
+	line-height: 40px;
+}
+
+.main-line{
+	background:#A7A7A7;
+}
+
+.main-part8{
+	height:300px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.main-volunteer{
+	margin-top:120px;
+	font:20px 'SimHei';
+	font-weight:bold;
+}
+
+.main-us{
+	background:#E44F4B;
+}
+
+.main-join{
+	font:12px 'SimHei';
+	color:#B1B1B1;
+	line-height: 1.5;
+}
+
+.main-part9{
+	height:448px;
+}
+
+.main-info{
+	width:325px;
+	margin-left:94px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-agreement{
+	height:133px;
+}
+
+.main-potocal,.main-power,.main-items{
+	font:16px 'SimHei';
+	line-height:20px;
+	font-weight:bold;
+	line-height:34px;
+	text-align:left;
+}
+
+.main-agreeItems,.main-powerInfo{
+	font:12px 'SimHei';
+	color:#B1B1B1;
+	line-height: 2.5;
+	text-align:left;
+}
+
+.main-apply{
+	width:645px;
+	height:286px;
+	margin-left:75px;
+	display: inline-block;
+}
+
+.main-apply table{
+	width:100%;
+	height:100%;
+}
+
+.main-apply td{
+	border:10px solid #fff;
+}
+
+.main-apply input,.main-apply textarea{
+	display: table-cell;
+	width:100%;
+	height:100%;
+	border:none;
+	background-color: #EDEDEF;
+}
+
+.main-apply span{
+	display: table-cell;
+	padding:5px 5px;
+	height:100%;
+}
+
+.footer{
+	height:414px;
+}
+
+.footer-contactUs{
+	height:356px;
+	background:#33363F;
+	text-align:center;
+	overflow:hidden;
+	color:#fff;
+}
+
+.footer-brand{
+	height:58px;
+	background:#2F2F37;
+}
+
+.footer-contact{
+	margin-top:90px;
+	font:20px 'SimHei';
+	font-weight:bold;
+	line-height:2;
+}
+
+.footer-info,.footer-care{
+	font:12px 'SimHei';
+	line-height: 1.5;
+	color:#fff;
+}
+
+.footer-input{
+	margin-top:34px;
+	overflow: hidden;
+}
+
+.footer-contactUs input{
+	width:430px;
+	height:40px;
+	display:inline-block;
+	border:none;
+	vertical-align: top;
+}
+
+.footer-submit{
+	display:inline-block;
+	width:80px;
+	height:40px;
+	background:#6F7279;
+	color:#fff;
+	font:16px 'MicrosoftYaHei';
+	font-weight:bold;
+	line-height:40px;
+}
+
+.footer-share{
+	margin-top:36px;
+}
+
+.footer-share img{
+	margin-right:28px;
+}
+
+.footer-author{
+	color:#fff;
+	margin-left: 50px;
+	font:20px 'MicrosoftYaHei';
+	font-weight:bold;
+	line-height:58px;
+}
