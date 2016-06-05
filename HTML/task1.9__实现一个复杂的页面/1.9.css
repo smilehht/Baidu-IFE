@@ -1,0 +1,547 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+ul,li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+body{
+	font:12px 'SimHei';
+	width:1280px;
+	margin:auto;
+	font-weight:500;
+}
+
+header{
+	height:56px;
+	background:#2189C0;
+}
+
+.header-brand{
+	margin:10px 50px;
+	/*vertical-align: middle;*/
+}
+
+.header-search-login{
+	float:right;
+	margin:14px 80px 14px auto;
+	overflow:hidden;
+}
+
+.header-search-login input{
+	width:250px;
+	height:28px;
+	padding:0px 14px;
+	border:1px solid #fff;
+	border-top-left-radius: 14px;
+	border-bottom-left-radius: 14px;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+}
+
+.header-login{
+	display:inline-block;
+	height:28px;
+	margin-left:20px;
+}
+
+.header-login img{
+	vertical-align: middle;
+}
+.header-login a{
+	color:#fff;
+	font:14px '	SimHei';
+	font-weight:bold;
+	line-height:28px;
+}
+
+aside{
+	width:260px;
+	height:1200px;
+	float:left;
+	background:#2B2E3D;
+}
+
+.aside-info{
+	height:80px;
+	text-align:left;
+	overflow:hidden;
+}
+
+.aside-img1{
+	width:56px;
+	height:56px;
+	float:left;
+	margin:18px 20px 18px 45px;
+	border:solid 1px #C3C2C7;
+	border-radius:28px;
+}
+
+.aside-img2{
+	width:48px;
+	height:48px;
+	margin:4px;
+	border-radius:24px;
+	background:url(img/hht.jpg);
+}
+
+.aside-img2 img{
+	width:48px;
+	height:48px;
+	border-radius:24px;
+}
+
+.aside-name{
+	color:#fff;
+	font:16px "MicrosoftYahei";
+	font-weight:bold;
+	line-height:92px;
+}
+
+.aside-collectfun{
+	width:80px;
+	height:30px;
+	margin:20px auto;
+	color:#647386;
+	font:12px "	SimHei";
+	font-weight:bold;
+	line-height:16px;
+}
+
+.aside-collects{
+	float:left;
+	padding-right:20px;
+	/*border-right:5px solid #383E4E;*/
+}
+
+.aside-fans{
+	padding-left:40px;
+}
+
+.aside-items{
+	height:50px;
+	text-indent:70px;
+	color:#6A7C90;
+	font:12px "SimHei";
+	font-weight:bold;
+	line-height:50px;
+}
+
+.aside-child{
+	line-height: 30px;
+	text-indent:100px;
+}
+
+.aside-show{
+	height:180px;
+	line-height:30px;
+}
+
+.aside-grandchild{
+	text-indent:116px;
+}
+
+.aside-choosed{
+	color:#fff;
+}
+
+.aside-unchoosed{
+	color:#647386;
+}
+
+.main{
+	position:relative;
+	margin-left:260px;
+	width:1020px;
+	height:1200px;
+	background:#eee;
+}
+
+.main-head{
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	color:#112444;
+	text-indent:10px;
+	background:#fff;
+}
+
+.main-head b{
+	color:blue;
+}
+
+.main-content{
+	height:1150px;
+	width:890px;
+	margin:20px auto 0;
+}
+
+.main-search{
+	height:84px;
+	border:1px solid #CECECE;
+	background:#fff;
+	overflow:hidden;
+}
+
+.main-search form{
+	margin-top:15px;
+	overflow: hidden;
+}
+
+.main-search form label{
+	margin-left:30px;
+}
+
+.main-nextline{
+	margin-top:10px;
+}
+
+#main-seller{
+	margin-left:173px;
+}
+
+.main-searchbutton{
+	width:50px;
+	height:25px;
+	color:#fff;
+	margin-top:-50px;
+	margin-left:30px;
+	background:#1276B9;
+	border:none;
+}
+
+.main-timeprice{
+	height:63px;
+	margin-top:10px;
+	overflow:hidden;
+}
+.main-timeprice div{
+	float:left;
+	background:#fff;
+}
+
+.main-direct{
+	width:30px;
+	height:61px;
+	text-align:center;
+	font:30px 'SimHei';
+	font-weight:bold;
+	line-height:63px;
+	color:#ABABAB;
+	border:1px solid #ABABAB;
+	margin-right:4px;
+}
+
+.main-price{
+	width:109px;
+	height:58px;
+	text-align:center;
+	border:1px solid #ABABAB;
+	border-top:4px solid #fff;
+	margin-right:4px;
+}
+
+.main-price:hover{
+	border-top:4px solid #4388C9;
+	height:58px;
+}
+
+.main-price p{
+	vertical-align: bottom;
+}
+
+.main-time{
+	font:12px "	KaiTi";
+	color:#000;
+	/*font-weight:bold;*/
+	line-height:28px;
+}
+
+.main-pricenumber{
+	color:#ED6500;
+	font:16px 'MicrosoftYahei';
+	font-weight:bold;
+}
+
+.main-historysearch{
+	width:105px;
+	height:31px;
+	border:1px solid #ABABAB;
+	text-align:center;
+	padding:15px 10px;
+}
+
+.main-historysearch span{
+	vertical-align: 10px;
+	font-weight:bold;
+}
+
+.main-statics{
+	height:95px;
+	margin-top:15px;
+	overflow: hidden;
+}
+
+.main-staticstitle{
+	color:#333333;
+	line-height: 20px;
+}
+
+.main-details{
+	float:left;
+	width:196px;
+	height:70px;
+	border:1px solid #D4D5D7;
+	border-left:4px solid #D4D5D7;
+	background:#fff;
+}
+
+.main-detals-margin{
+	margin-right:28px;
+}
+
+.main-panel{
+	float:left;
+	height:56px;
+	width:100px;
+	margin:7px 16px 7px 5px ;
+}
+
+.main-deal{
+	font: 12px 'MicrosoftYahei';
+	line-height:28px;
+	color:#000;
+}
+
+.main-dealname{
+	color:#B6B6B6;
+	font-weight:bold;
+}
+
+.main-graph{
+	float:left;
+	width:60px;
+	height:48px;
+	margin-top:11px;
+	background:blue;
+}
+
+.main-color1-1{
+	border-left:4px solid #43B29F;
+}
+
+.main-color1-2{
+	background:#43B29F;
+}
+.main-color2-1{
+	border-left:4px solid #388BC1;
+}
+
+.main-color2-2{
+	background:#388BC1;
+}
+.main-color3-1{
+	border-left:4px solid #CE4A35;
+}
+
+.main-color3-2{
+	background:#CE4A35;
+}
+.main-color4-1{
+	border-left:4px solid #E1CD46;
+}
+
+.main-color4-2{
+	background:#E1CD46;
+}
+
+.main-projects{
+	height:358px;
+	margin-top:13px;
+	overflow: hidden;
+}
+
+.main-project1{
+	float:left;
+	height:355px;
+	width:528px;
+	margin-right:8px;
+	border:2px solid #CBCBCB;
+	border-radius:6px;
+	background:#fff;
+	box-shadow:1px 1px 1px #CBCBCB;
+	overflow: hidden;
+}
+
+.main-project2{
+	float:left;
+	height:355px;
+	width:343px;
+	border:2px solid #CBCBCB;
+	border-radius:6px;
+	background:#fff;
+	box-shadow:1px 1px 1px #CBCBCB;
+	overflow: hidden;
+}
+
+.main-projectheader{
+	height:39px;
+	background:#F4F5F7;
+	border-bottom:1px solid #CBCBCD;
+	line-height:39px;
+	text-indent:15px;
+}
+
+.main-projectView{
+	height:290px;
+}
+
+.main-projectMenu{
+	width:488px;
+	height:27px; 
+	margin:12px auto 0;
+}
+
+.main-projectNavi{
+	float:left;
+	padding:0px 20px;
+	background:#CBCBCB;
+	border:1px solid #CBCBCB;
+	border-bottom:none;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	margin-right:4px;
+	line-height:27px;
+	overflow: hidden;
+}
+
+.main-projectNavi:hover{
+	background:#fff;
+	border-bottom:none;
+}
+
+.main-projectDetails{
+	width:488px;
+	height:250px;
+	border:1px solid #CBCBCB;
+	margin:0px 20px;
+}
+
+.main-projectDetails table{
+	margin:28px auto;
+	border-collapse: collapse;
+	/*border:1px ;*/
+}
+
+.main-projectDetails td{
+	font:12px "MicrosoftYahei";
+	font-weight:bold;
+	line-height: 28px;
+	padding:0 20px;
+	border:1px solid #CBCBCB;
+}
+
+.main-projectDetails tr:nth-child(odd){
+	background:#EEEEF0;
+}
+
+.main-projectDetails tr:hover{
+	background:#C2CF8A;
+}
+
+.main-dateAndBrand{
+	height:400px;
+	margin-top:8px;
+	overflow: hidden;
+}
+
+.main-date{
+	float:left;
+	width:350px;
+	height:355px;
+	border:2px solid #CBCBCB;
+	margin-right:8px;
+	border-radius:8px;
+	background:#fff;
+}
+
+.main-brand{
+	float:left;
+	width:525px;
+	height:355px;
+	border:1px solid #CBCBCB;
+	border-radius:4px;
+	background:#fff;
+}
+
+.main-timeForm{
+	width:300px;
+	height:20px;
+	margin:10px auto;
+}
+
+.main-calenderDetails{
+	width:350px;
+	margin:10px 18px ;
+	font:12px 'MicrosoftYahei';
+}
+
+.main-calenderDetails table{
+	border-collapse:collapse;
+	/*border:1px solid #000;*/
+}
+
+.main-calenderDetails td,.main-calenderDetails th{
+	/*border:1px solid #000;*/
+	width:45px;
+	height:42px;
+	text-align:center;
+}
+
+.main-calenderDetails td:hover{
+	background:#CBCBCB;
+}
+
+.main-calenderDetails th{
+	height:30px;
+	border-top:2px solid #A8CFEC;;
+	border-bottom:2px solid #E1E1E1;;
+}
+
+.main-calenderDetails td p{
+	font:10px 'MicrosoftYahei';
+	font-weight:bold;
+}
+
+.main-calenderColor{
+	color:#CA151E;
+}
+
+.main-brandDetails{
+	margin:18px 37px;
+	width:450px;
+	height:275px;
+	overflow:auto;
+}
+
+.main-brandDetails table{
+	width:430px;
+	height:273px;
+	border-collapse:collapse;
+	border:1px solid #CBCBCB;
+}
+
+.main-brandDetails td,.main-brandDetails th{
+	padding: 5px 20px;
+	border:1px solid #CBCBCB;
+}
+
+.main-brandDetails tr:hover{
+	background:#CBCBCB;
+	cursor:pointer;
+}

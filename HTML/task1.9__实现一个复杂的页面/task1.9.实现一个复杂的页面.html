@@ -1,0 +1,469 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>task1.9 | 实现一个付复杂的页面</title>
+		<link href="1.9.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<img class="header-brand" src="img/brand.png">
+			<div class="header-search-login">
+				<input type="search" name="search" placeholder="请输入搜索内容">
+				<div class="header-login"><img src="img/login.png"><a href="#"> 登录</a></div>
+			</div>
+		</header>
+		<a href="#">
+			<aside>
+				<div class="aside-info">
+					<div class="aside-img1">
+						<div class="aside-img2"><img src="img/hht.jpg" alt=""></div>
+					</div>
+					<span class="aside-name">滔滔江水</span>
+				</div>
+				<div class="aside-collectfun">
+					<div class="aside-collects">
+						<p class="aside-collectnum">110</p>
+						<p class="aside-collect">收藏</p>
+					</div>
+					<div class="aside-fans">
+						<p class="aside-fannum">313</p>
+						<p class="aside-fun">粉丝</p>
+					</div>
+				</div>
+				<div class="aside-items aside-show">
+					<img src="img/report.png" alt="">
+					 个人报表
+					<ul>
+						<li class="aside-child">> 
+					<img src="img/file1.png" alt=""> 文件一</li>
+						<li class="aside-child aside-choosed">> 
+					<img src="img/folder.png" alt=""> 文件二
+							<ul>
+								<li class="aside-grandchild">
+					<img src="img/file1.png" alt=""> 文档一</li>
+								<li class="aside-grandchild aside-unchoosed">
+					<img src="img/report.png" alt=""> 文档二</li>
+							</ul>
+						</li>
+						<li class="aside-child">>
+					<img src="img/folder1.png" alt=""> 文件三</li>
+					</ul>
+				</div>
+				<div class="aside-items">
+					<ul>
+						<li>
+					<img src="img/star.png" alt=""> 个人收藏</li>
+						<li>
+					<img src="img/share.png" alt=""> 我的分享</li>
+						<li>
+					<img src="img/star.png" alt=""> 图库</li>
+						<li>
+					<img src="img/star.png" alt=""> 成长记录</li>
+						<li>
+					<img src="img/account.jpg" alt=""> 账户信息</li>
+					</ul>
+				</div>
+			</aside>
+		</a>
+		<div class="main">
+			<div class="main-head">C站 / 个人报表 / 文件一 / <b>文档一</b></div>
+			<div class="main-content">
+				<div class="main-search">
+					<form action="">
+						<label for="search">查询项</label>
+						<select name="search" id="search">
+							<option value="first">第一项</option>
+							<option value="second">第二项</option>
+							<option value="third">第三项</option>
+						</select>
+
+						<label for="buyer">买方</label>
+						<select name="buyer" id="buyer">
+							<option value="qiaokeli">巧克力公主</option>
+							<option value="white">白雪公主</option>
+						</select>
+						<label for="date">日期</label>
+						<input type="text" value="2016-04-01">
+						<label for="cost">总耗时</label>
+						<select name="cost" id="cost">
+							<option value="eight">8 天</option>
+							<option value="seven">7 天</option>
+							<option value="six">6 天</option>
+						</select>
+						<p class="main-nextline">
+							<label for="seller" id="main-seller">卖方</label>
+							<select name="seller" id="seller" style="width:89px;">
+								<option value="hht">滔滔江水</option>
+								<option value="hht">滔滔不绝</option>
+							</select>
+							<label for="number">人数</label>
+							<select name="number" id="number">
+							<option value="ten"> 10 人</option>
+							<option value="eight"> 8 人</option>
+							</select>
+
+							<label for="deal">成交项</label>
+							<select name="deal" id="deal" style="width:168px;">
+								<option value="ten">10 items</option>
+								<option value="eight">8 items</option>
+							</select>
+							<input type="submit" value="搜索" class="main-searchbutton">
+						</p>
+					</form>
+				</div>
+				<div class="main-timeprice">
+					<a href="#">
+						<div class="main-direct"><</div>
+						<div class="main-price"><p class="main-time">10:00 am</p><p class="main-pricenumber">￥1200</p></div>
+						<div class="main-price"><p class="main-time">10:00 am</p><p class="main-pricenumber">￥1200</p></div>
+						<div class="main-price"><p class="main-time">10:00 am</p><p class="main-pricenumber">￥1200</p></div>
+						<div class="main-price"><p class="main-time">10:00 am</p><p class="main-pricenumber">￥1200</p></div>
+						<div class="main-price"><p class="main-time">10:00 am</p><p class="main-pricenumber">￥1200</p></div>
+						<div class="main-price"><p class="main-time">10:00 am</p><p class="main-pricenumber">￥1200</p></div>
+						<div class="main-direct">></div>
+						<div class="main-historysearch">
+							<img src="img/calender.jpg" alt="">
+							<span>历史查询</span>
+						</div>
+					</a>
+				</div>
+				<div class="main-statics">
+					<p class="main-staticstitle">2016年4月统计</p>
+					<a href="#">
+						<div class="main-details main-detals-margin main-color1-1">
+							<div class="main-panel">
+								<p class="main-deal">133311</p>
+								<p class="main-deal main-dealname">成交量</p>
+							</div>
+							<div class="main-graph main-color1-2"></div>
+						</div>
+						<div class="main-details main-detals-margin  main-color2-1">
+							<div class="main-panel">
+								<p class="main-deal">133311</p>
+								<p class="main-deal main-dealname">成交量</p>
+							</div>
+							<div class="main-graph main-color2-2"></div>
+						</div>
+						<div class="main-details main-detals-margin main-color2-1">
+							<div class="main-panel">
+								<p class="main-deal">133311</p>
+								<p class="main-deal main-dealname">成交量</p>
+							</div>
+							<div class="main-graph main-color3-2"></div>
+						</div>
+						<div class="main-details  main-color4-1">
+							<div class="main-panel">
+								<p class="main-deal">133311</p>
+								<p class="main-deal main-dealname">成交量</p>
+							</div>
+							<div class="main-graph main-color4-2"></div>
+						</div>
+					</a>
+				</div>
+				<div class="main-projects">
+					<div class="main-project1">
+						<div class="main-projectheader">第一组项目</div>
+						<div class="main-projectView">
+							<div class="main-projectMenu">
+								<ul>
+									<li class="main-projectNavi">项目一</li>
+									<li class="main-projectNavi">项目一</li>
+									<li class="main-projectNavi">项目一</li>
+									<li class="main-projectNavi">项目一</li>
+									<li class="main-projectNavi">项目一</li>
+								</ul>
+							</div>
+							<div class="main-projectDetails">
+								<table>
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="main-project2">
+						<div class="main-projectheader">第一组项目</div>
+						<p style="margin-top:30px;text-align:center; font-size:20px;"> easy do</p>
+						<img src="img/sunrise.jpg" alt="" style="width:200px; text-align:center;margin:50px auto ; display:block;"></div>
+				</div>
+				<div class="main-dateAndBrand">
+					<div class="main-date">
+						<div class="main-projectheader">日历</div>
+						<div class="main-timeForm">
+							<form action="">
+								<select name="year" id="year">
+									<option value="2016">2016年 </option>
+									<option value="2015">2015年 </option>
+									<option value="2014">2014年 </option>
+								</select>
+								<select name="month" id="month">
+									<option value="April">四月</option>
+									<option value="March">三月</option>
+									<option value="February">二月</option>
+								</select>
+								<select name="mark" id="mark">
+									<option value="markdate">标注日期</option>
+									<option value="marktime">标注时间</option>
+								</select>
+								<input type="button" value="返回今天">
+							</form>
+						</div>	
+							<div class="main-calenderDetails">
+								<table>
+									<tr>
+										<th>一</th>
+										<th>二</th>
+										<th>三</th>
+										<th>四</th>
+										<th>五</th>
+										<th>六</th>
+										<th>七</th>
+									</tr>
+									<tr>
+										<td>
+											<p></p>
+											<p></p>
+										</td>
+										<td>
+											<p></p>
+											<p></p>
+										</td>
+										<td>
+											<p></p>
+											<p></p>
+										</td>
+										<td>
+											<p></p>
+											<p></p>
+										</td>
+										<td>
+											<p>1</p>
+											<p class="main-calenderColor">愚人节</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">2</p>
+											<p>廿五</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">3</p>
+											<p>廿六</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4</p>
+											<p>廿七</p>
+										</td>
+										<td>
+											<p>5</p>
+											<p class="main-calenderColor">清明</p>
+										</td>
+										<td>
+											<p>6</p>
+											<p>廿九</p>
+										</td>
+										<td>
+											<p>7</p>
+											<p>三月</p>
+										</td>
+										<td>
+											<p>8</p>
+											<p>初二</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">9</p>
+											<p>初三</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">10</p>
+											<p>初四</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>11</p>
+											<p>初五</p>
+										</td>
+										<td>
+											<p>12</p>
+											<p>初六</p>
+										</td>
+										<td>
+											<p>13</p>
+											<p>初七</p>
+										</td>
+										<td>
+											<p>14</p>
+											<p>初八</p>
+										</td>
+										<td>
+											<p>15</p>
+											<p>初九</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">16</p>
+											<p>初十</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">17</p>
+											<p>十一</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>18</p>
+											<p>十二</p>
+										</td>
+										<td>
+											<p>19</p>
+											<p>十三</p>
+										</td>
+										<td>
+											<p>20</p>
+											<p>十四</p>
+										</td>
+										<td>
+											<p>21</p>
+											<p>十五</p>
+										</td>
+										<td>
+											<p>22</p>
+											<p>十六</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">23</p>
+											<p>十七</p>
+										</td>
+										<td>
+											<p class="main-calenderColor">24</p>
+											<p>十八</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>25</p>
+											<p>十九</p>
+										</td>
+										<td>
+											<p>26</p>
+											<p>廿十</p>
+										</td>
+										<td>
+											<p>27</p>
+											<p>廿一</p>
+										</td>
+										<td>
+											<p>28</p>
+											<p>廿二</p>
+										</td>
+										<td>
+											<p>29</p>
+											<p>廿三</p>
+										</td>
+										<td>
+											<p>30</p>
+											<p>廿四</p>
+										</td>
+										<td>
+											<p></p>
+											<p></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+					</div>
+					<div class="main-brand">
+						<div class="main-projectheader">汽车行业品牌榜</div>
+						<div class="main-brandDetails">
+							<table>
+								<thead>
+									<tr>
+										<th>排名</th>
+										<th>品牌</th>
+										<th>搜索指数</th>
+									</tr>
+								</thead>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001  48912001  48912001</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
