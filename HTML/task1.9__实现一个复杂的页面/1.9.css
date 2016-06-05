@@ -526,7 +526,7 @@ aside{
 	margin:18px 37px;
 	width:450px;
 	height:275px;
-	overflow:auto;
+	overflow:hidden;
 }
 
 .main-brandDetails table{
@@ -544,4 +544,62 @@ aside{
 .main-brandDetails tr:hover{
 	background:#CBCBCB;
 	cursor:pointer;
+}
+
+.table-range{
+    display:inline-block;
+    width:150px;
+    height:5px;
+    background-color:#ddd;
+    margin-left:17px;
+
+}
+.table-range div{
+    height:5px;
+}
+.table-range-1{
+    width:96%;
+    background-color:#ec6e51;
+}
+.table-range-2{
+    width:58%;
+    background-color:#ef8150;
+}
+.table-range-3{
+    width:46%;
+    background-color:#f29f4f;
+}
+.table-range-4{
+    width:45%;
+    background-color:#7fcbf0;
+}
+.table-range-5{
+    width:44%;
+    background-color:#7fcbf0;
+
+}
+.table-range-6{
+    width:43%;
+    background-color:#7fcbf0;
+
+}
+.table-range-7{
+    width:41%;
+    background-color:#7fcbf0;
+
+}
+.table-range-8{
+    width:39%;
+    background-color:#7fcbf0;
+
+}
+.table-range-9{
+    width:38%;
+    background-color:#7fcbf0;
+
+}
+.table-range-10{
+    width:37%;
+    background-color:#7fcbf0;
+
 }
