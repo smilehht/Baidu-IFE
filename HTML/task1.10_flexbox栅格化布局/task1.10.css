@@ -1,0 +1,44 @@
+		body{
+			margin:0;
+			padding:0;
+		}
+		.wrap{
+			display:flex;
+    		flex-flow: row wrap;
+			/*height:300px;*/
+			align-items:center;
+			justify-content: space-between;
+    		align-items: center;
+			align-self: center;
+		}
+		.child{
+			width:150px;
+			border:solid 1px red;
+			padding:20px;
+			margin:20px;
+			float:left;
+		}
+		.wrap div:first-child{
+			margin-left:0;
+		}
+		.wrap div:last-child{
+			margin-right:0;
+		}
+		.one{
+			height:120px;
+		}
+		.two{
+			height:100px;
+		}
+		.three{
+			height:40px;
+		}
+		.four{
+			height:200px;
+			border:solid 1px blue;
+		}
+		@media and (min-width: 640px){
+			.wrap{
+				flex-wrap:wrap-reverse;
+			}
+		}
