@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width: 1000px;
+	margin: 20px auto;
+}
+
+table{
+	margin: 10px auto;
+	border-collapse: collapse;
+	font-weight: bold;
+}
+
+th{
+	background:#000100;
+	color:#fff;
+}
+tr{
+	height: 30px;
+}
+
+td,th{
+	padding: 0px 20px;
+	text-align: center;
+	border-right:3px solid #fff;
+}
+
+tr:nth-child(even){
+	background:#DCE1E7;
+}
+
+tr:nth-child(1),tr:nth-child(2),tr:nth-child(3){
+	color:red;
+}
+
+tr:hover{
+	background:#66D9EF;
+	cursor:pointer;
+}
+
+.input{
+	width:500px;
+	height:300px;
+	margin:10px auto;
+	border:1px solid #c1c1c1;
+}
+
+input{
+	margin: 50px 150px;
+	width:200px;
+}
+
+input:focus{
+
+	animation:changeWidthAndHeight 2s;
+}
+
+@keyframes changeWidthAndHeight{
+	from{
+		margin: 50px 150px;
+		width:200px;
+		height:20px;
+	}
+	to{
+		margin: 50px 50px;
+		width:400px;
+		height:50px;
+	}
+}
