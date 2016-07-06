@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task1.13|零基础JavaScript编码</title>
+ </head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button">确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+(function() {
+	var oInput=document.getElementById("aqi-input");
+	var oButton=document.getElementById("button");
+	var oSpan=document.getElementById("aqi-display");
+	oButton.onclick=function(){
+		//如果输入的值不为空，替换输入的值
+		if (oInput.value!="") {
+			oSpan.innerHTML=oInput.value;
+		}
+	}
+})();
+
+</script>
+</body>
+</html>
