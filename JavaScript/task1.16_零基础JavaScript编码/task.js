@@ -24,6 +24,7 @@ init();
  */
 function addAqiData() {
   aqiData[city_input.value]=value_input.value;
+  
 }
 
 /**
@@ -31,7 +32,7 @@ function addAqiData() {
  */
 function renderAqiList() {
   var str="";
-  str="<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
+  str="<thead><tr><th>城市</th><th>空气质量</th><th>操作</th></tr></thead>";
   for (var items in aqiData) {
     var Property="";
     str+="<tr><td>"+items+"</td><td>"+aqiData[items]+"</td><td><button>删除</button></td></tr>"
@@ -44,6 +45,7 @@ function renderAqiList() {
  * 获取用户输入，更新数据，并进行页面呈现的更新
  */
 function addBtnHandle() {
+
   addAqiData();
   renderAqiList();
 }
@@ -55,7 +57,6 @@ function addBtnHandle() {
 function delBtnHandle(target) {
   // do sth.
 
-  // alert("111");
   var oTd=target.parentNode.parentNode.getElementsByTagName("td")[0];
   var city=oTd.innerHTML;
   delete aqiData[city];
