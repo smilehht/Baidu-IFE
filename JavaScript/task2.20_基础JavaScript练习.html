@@ -21,6 +21,9 @@
 			/*实现长英文字符或数字无法换行的情况*/
 			word-break: break-all;
 		}
+		span{
+			background:#FFFF00;
+		}
 	</style>
 </head>
 <body>
@@ -39,6 +42,8 @@
 	var oInput=document.getElementsByTagName("input");
 	//数组存放队列值
 	var arr=new Array();
+	//存放转换后的字符串
+	var arr_finish=new Array();
 	//左侧入
 	oInput[0].onclick=function(){
 		var value=judge();
@@ -91,11 +96,15 @@
 	//查询功能
 	oInput[5].onclick=function(){
 		value=oInput[4].value;
-		var reg=/value/ig;
+		var reg=new RegExp(value,"ig");
+		console.log(reg);
 		//依次在数组中查找
 		for (var i = 0; i < arr.length; i++) {
-			arr[i]
+		    arr_finish.push(arr[i].replace(reg,"<span>"+value+"</span>"));
 		}
+		// alert(arr_finish);
+		show_convert();
+		arr_finish.length=0;
 
 	}
 
@@ -113,6 +122,19 @@
 		for (var i = 0; i < arr.length; i++) {
 			html+='<li >'+arr[i]+'</li>';
 		}
+		oUl.innerHTML=html;
+		//增减li后点击li删除当前li
+		deleteLi();
+	}
+
+	//重新渲染队列
+	function show_convert(){
+		var oUl=document.getElementById("queue");
+		var html='';
+		for (var i = 0; i < arr_finish.length; i++) {
+			html+='<li >'+arr_finish[i]+'</li>';
+		}
+		// alert(html);
 		oUl.innerHTML=html;
 		//增减li后点击li删除当前li
 		deleteLi();
