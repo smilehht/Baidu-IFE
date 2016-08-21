@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2.18</title>
+	<style>
+		ul,li{
+			list-style:none;
+			/*margin:0;*/
+			padding:0;
+		}
+		li{
+			float:left;
+			color:#fff;
+			background:red;
+			margin-right:5px;
+			padding:5px;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="inputText" >
+	<input type="button" id="btn1" value="左侧入">
+	<input type="button" id="btn2" value="右侧入">
+	<input type="button" id="btn3" value="左侧出">
+	<input type="button" id="btn4" value="右侧出">
+	<ul id="queue">
+	</ul>
+</body>
+<script>
+	var oInput=document.getElementsByTagName("input");
+	//数组存放队列值
+	var arr=new Array();
+	//左侧入
+	oInput[1].onclick=function(){
+		var value=judge();
+		if(value!=""){
+			arr.unshift(value);
+			show();
+		}
+	}
+	// 右侧进入
+	oInput[2].onclick=function(){
+		var value=judge();
+		if(value!=""){
+			arr.push(value);
+			show();
+		}
+	}
+	//左侧出
+	oInput[3].onclick=function(){
+
+		if(arr.length!=0){
+			arr.shift();
+			show();
+		}
+	}
+	//右侧出
+	oInput[4].onclick=function(){
+
+		if(arr.length!=0){
+			arr.pop();
+			show();
+		}
+	}
+	//判断输入框中是否有值
+	function judge(){
+		return oInput[0].value==null||oInput[0].vulue=="undefine"? "":oInput[0].value;
+	}
+	//重新渲染队列
+	function show(){
+		var oUl=document.getElementById("queue");
+		var html='';
+		for (var i = 0; i < arr.length; i++) {
+			html+='<li>'+arr[i]+'</li>';
+		}
+		oUl.innerHTML=html;
+		//增减li后点击li删除当前li
+		deleteLi();
+	}
+	//点击队列元素，实现删除操作
+	function deleteLi(){
+		var oUl=document.getElementById("queue");
+		var aLi=oUl.getElementsByTagName("li");
+		for (var i = 0; i < aLi.length; i++) {
+			aLi[i].tag=i;
+		}
+		oUl.addEventListener("click",function(ev){
+
+			var event=ev||event;
+			var target=event.target;
+			var index=-1;
+			target.onclick=function(){
+				// this.style.display="none";
+				//找到该li是第几个li
+				for (var i = 0; i < aLi.length; i++) {
+					// alert(this.innerHTML);
+					// alert(aLi[i].innerHTML);
+					if(aLi[i].tag==this.tag){
+						index=i;
+						for (var j = index; j < arr.length-1; j++) {
+							console.log(arr[j]+":"+arr[j+1])
+							arr[j]=arr[j+1];
+						}
+						arr.length-=1;
+						show();
+						break;
+					}
+				}
+			}
+
+		},true);
+	}
+</script>
+</html>

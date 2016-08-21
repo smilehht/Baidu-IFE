@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2.20</title>
+	<style>
+		ul,li{
+			list-style:none;
+			/*margin:0;*/
+			padding:0;
+		}
+		li{
+			/*float:left;*/
+			/*color:#fff;*/
+			/*background:red;*/
+			border:1px solid #999;
+			margin:5px;
+			padding:5px;
+			font-weight:bold;
+			cursor:pointer;
+			/*实现长英文字符或数字无法换行的情况*/
+			word-break: break-all;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" id="btn1" value="左侧入">
+	<input type="button" id="btn2" value="右侧入">
+	<input type="button" id="btn3" value="左侧出">
+	<input type="button" id="btn4" value="右侧出">
+	<input type="text" id="search" name="search">
+	<input type="button" value="查询">
+	<br><br>
+	<textarea name="content" id="content" cols="60" rows="10" style="resize:none;"></textarea>
+	<ul id="queue">
+	</ul>
+</body>
+<script>
+	var oInput=document.getElementsByTagName("input");
+	//数组存放队列值
+	var arr=new Array();
+	//左侧入
+	oInput[0].onclick=function(){
+		var value=judge();
+		if(value!=""){
+
+			if (arr.length<=60) {
+
+				arr.unshift(value);
+				show();
+
+			} else {
+				alert("温馨提示：输入数据的个数应小于60！");
+			}
+
+
+			
+		}
+	}
+	// 右侧进入
+	oInput[1].onclick=function(){
+		var value=judge();
+		if(value!=""){
+			if (arr.length<=60) {
+
+				arr.push(value);
+				show();
+
+			} else {
+				alert("温馨提示：输入数据的个数应小于60！");
+			}
+		}
+	}
+	//左侧出
+	oInput[2].onclick=function(){
+
+		if(arr.length!=0){
+			arr.shift();
+			show();
+		}
+	}
+	//右侧出
+	oInput[3].onclick=function(){
+
+		if(arr.length!=0){
+			arr.pop();
+			show();
+		}
+	}
+
+	//查询功能
+	oInput[5].onclick=function(){
+		value=oInput[4].value;
+		var reg=/value/ig;
+		//依次在数组中查找
+		for (var i = 0; i < arr.length; i++) {
+			arr[i]
+		}
+
+	}
+
+	// 判断输入框中是否有值
+	function judge(){
+		var value=document.getElementById("content").value;
+		// alert(value);
+		return (value==null||value=="undefine"?  "":value);
+	}
+
+	//重新渲染队列
+	function show(){
+		var oUl=document.getElementById("queue");
+		var html='';
+		for (var i = 0; i < arr.length; i++) {
+			html+='<li >'+arr[i]+'</li>';
+		}
+		oUl.innerHTML=html;
+		//增减li后点击li删除当前li
+		deleteLi();
+	}
+	//点击队列元素，实现删除操作
+	function deleteLi(){
+		var oUl=document.getElementById("queue");
+		var aLi=oUl.getElementsByTagName("li");
+		for (var i = 0; i < aLi.length; i++) {
+			aLi[i].tag=i;
+		}
+		oUl.addEventListener("click",function(ev){
+
+			var event=ev||event;
+			var target=event.target;
+			var index=-1;
+			target.onclick=function(){
+				// this.style.display="none";
+				//找到该li是第几个li
+				for (var i = 0; i < aLi.length; i++) {
+					// alert(this.innerHTML);
+					// alert(aLi[i].innerHTML);
+					if(aLi[i].tag==this.tag){
+						index=i;
+						for (var j = index; j < arr.length-1; j++) {
+							console.log(arr[j]+":"+arr[j+1])
+							arr[j]=arr[j+1];
+						}
+						arr.length-=1;
+						show();
+						break;
+					}
+				}
+			}
+
+		},true);
+	}
+</script>
+</html>
