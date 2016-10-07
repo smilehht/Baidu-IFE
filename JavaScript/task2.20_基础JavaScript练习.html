@@ -27,150 +27,31 @@
 	</style>
 </head>
 <body>
-	<input type="button" id="btn1" value="左侧入">
-	<input type="button" id="btn2" value="右侧入">
-	<input type="button" id="btn3" value="左侧出">
-	<input type="button" id="btn4" value="右侧出">
-	<input type="text" id="search" name="search">
+	<input type="text" >
 	<input type="button" value="查询">
 	<br><br>
-	<textarea name="content" id="content" cols="60" rows="10" style="resize:none;"></textarea>
-	<ul id="queue">
-	</ul>
+	<textarea id="content" cols="60" rows="10" style="resize:none;"></textarea>
+	<p id="afterChange"></p>
+
 </body>
 <script>
 	var oInput=document.getElementsByTagName("input");
-	//数组存放队列值
-	var arr=new Array();
-	//存放转换后的字符串
-	var arr_finish=new Array();
-	//左侧入
-	oInput[0].onclick=function(){
-		var value=judge();
-		if(value!=""){
-
-			if (arr.length<=60) {
-
-				arr.unshift(value);
-				show();
-
-			} else {
-				alert("温馨提示：输入数据的个数应小于60！");
-			}
-
-
-			
-		}
-	}
-	// 右侧进入
+	var oTextarea=document.getElementById("content");
+	var oP=document.getElementById("afterChange");
+	var value="";
+	var search="";
 	oInput[1].onclick=function(){
-		var value=judge();
-		if(value!=""){
-			if (arr.length<=60) {
-
-				arr.push(value);
-				show();
-
-			} else {
-				alert("温馨提示：输入数据的个数应小于60！");
-			}
+		search=oInput[0].value;
+		value=oTextarea.value;
+		reg=new RegExp(search,"gi");
+		// console.log(search);
+		if (search=="") {
+			alert("请输入关键字！");
+		} else {
+			// console.log(value);
+			// console.log(reg);
+			oP.innerHTML=value.replace(reg,"<span>"+search+"</span>");
 		}
-	}
-	//左侧出
-	oInput[2].onclick=function(){
-
-		if(arr.length!=0){
-			arr.shift();
-			show();
-		}
-	}
-	//右侧出
-	oInput[3].onclick=function(){
-
-		if(arr.length!=0){
-			arr.pop();
-			show();
-		}
-	}
-
-	//查询功能
-	oInput[5].onclick=function(){
-		value=oInput[4].value;
-		var reg=new RegExp(value,"ig");
-		console.log(reg);
-		//依次在数组中查找
-		for (var i = 0; i < arr.length; i++) {
-		    arr_finish.push(arr[i].replace(reg,"<span>"+value+"</span>"));
-		}
-		// alert(arr_finish);
-		show_convert();
-		arr_finish.length=0;
-
-	}
-
-	// 判断输入框中是否有值
-	function judge(){
-		var value=document.getElementById("content").value;
-		// alert(value);
-		return (value==null||value=="undefine"?  "":value);
-	}
-
-	//重新渲染队列
-	function show(){
-		var oUl=document.getElementById("queue");
-		var html='';
-		for (var i = 0; i < arr.length; i++) {
-			html+='<li >'+arr[i]+'</li>';
-		}
-		oUl.innerHTML=html;
-		//增减li后点击li删除当前li
-		deleteLi();
-	}
-
-	//重新渲染队列
-	function show_convert(){
-		var oUl=document.getElementById("queue");
-		var html='';
-		for (var i = 0; i < arr_finish.length; i++) {
-			html+='<li >'+arr_finish[i]+'</li>';
-		}
-		// alert(html);
-		oUl.innerHTML=html;
-		//增减li后点击li删除当前li
-		deleteLi();
-	}
-	//点击队列元素，实现删除操作
-	function deleteLi(){
-		var oUl=document.getElementById("queue");
-		var aLi=oUl.getElementsByTagName("li");
-		for (var i = 0; i < aLi.length; i++) {
-			aLi[i].tag=i;
-		}
-		oUl.addEventListener("click",function(ev){
-
-			var event=ev||event;
-			var target=event.target;
-			var index=-1;
-			target.onclick=function(){
-				// this.style.display="none";
-				//找到该li是第几个li
-				for (var i = 0; i < aLi.length; i++) {
-					// alert(this.innerHTML);
-					// alert(aLi[i].innerHTML);
-					if(aLi[i].tag==this.tag){
-						index=i;
-						for (var j = index; j < arr.length-1; j++) {
-							console.log(arr[j]+":"+arr[j+1])
-							arr[j]=arr[j+1];
-						}
-						arr.length-=1;
-						show();
-						break;
-					}
-				}
-			}
-
-		},true);
 	}
 </script>
 </html>
