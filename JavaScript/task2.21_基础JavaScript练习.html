@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2.21</title>
+	<style>
+		ul,li{
+			list-style:none;
+			/*margin:0;*/
+			padding:0;
+		}
+		li{
+			/*float:left;*/
+			/*color:#fff;*/
+			/*background:red;*/
+			border:1px solid #999;
+			margin:5px;
+			padding:5px;
+			font-weight:bold;
+			cursor:pointer;
+			/*实现长英文字符或数字无法换行的情况*/
+			word-break: break-all;
+		}
+		span{
+			background:#FFFF00;
+			border:3px solid #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="item1">
+		tag:<input type="text" >
+		<br>
+		<p id="tagitems"></p>
+	</div>
+
+</body>
+<script>
+
+	var oDiv1=document.getElementById("item1");
+
+	var oInput=oDiv1.getElementsByTagName("input")[0];
+
+
+	var arr=[];
+	oInput.onkeyup =function(ev){
+		var oP=oDiv1.getElementsByTagName("p")[0];
+		var ev=ev||event;
+		if (ev.keyCode==13 ||ev.keyCode==32 ||ev.keyCode==188 ) {
+				// alert(1);
+			if(judge(oInput.value)) {
+				//如果无重复值
+				console.log(arr);
+				add(oDiv1,oInput.value);
+				oInput.value="";
+			} 
+		} 
+		//判断是否有重复tag
+		function judge(value){
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i]==value ) {
+					return false;
+				} else {
+					arr.push(value);
+					return true;
+				}
+			}
+			if (arr.length==0) {
+				arr.push(value);
+				return true;
+			}
+		}
+	}
+
+	//添加新的item
+	function add( obj, value){
+
+		var span=document.createElement("span");
+		span.innerHTML=value;
+		obj.appendChild(span);
+	}
+</script>
+</html>
